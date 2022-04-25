@@ -1,0 +1,112 @@
+.container {
+  padding: 0.5rem 1rem;
+}
+
+.context {
+  max-width: 1440px;
+  padding: 1rem 1rem 0 1rem;
+  margin-inline: auto;
+}
+
+.context h3 {
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 920px) {
+  .context h3 {
+    text-align: center;
+  }
+}
+
+.filterBody {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  background-color: #f8f4fc;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 920px) {
+  .filterBody {
+    flex-direction: column;
+  }
+}
+
+.nameCol {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nameCol input {
+  padding: 0.5rem;
+  border: 0.5px solid black;
+}
+
+.priorityCol {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.priorityCol select {
+  height: 100%;
+  padding: 0.5rem;
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 920px) {
+  .filterBody {
+    flex-direction: column;
+  }
+
+  .nameCol {
+    width: 100%;
+  }
+
+  .priorityCol {
+    width: 100%;
+  }
+}
+
+.outerTable {
+  overflow-x: auto;
+}
+
+.jobList {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.jobList thead {
+  background-color: #e8ecfc;
+}
+
+.jobList thead tr td {
+  font-size: 1rem;
+  color: gray;
+  padding: 0.5rem;
+}
+
+.jobList td {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.jobList tbody tr:hover {
+  background-color: #fffcfc;
+}
+
+.priorityButton {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.25rem;
+  background-color: red;
+  color: white;
+  border: none;
+}

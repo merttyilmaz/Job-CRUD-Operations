@@ -1,0 +1,29 @@
+.container {
+  padding: 1rem;
+  bottom: 0;
+  width: 100%;
+}
+
+.context {
+  max-width: 1440px;
+  padding: 1rem;
+  margin-inline: auto;
+  background-color: rgba(248, 244, 244);
+}
+
+.context h1 {
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body span {
+  color: grey;
+  font-weight: 400;
+}

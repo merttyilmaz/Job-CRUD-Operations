@@ -1,0 +1,102 @@
+.container {
+  padding: 0.5rem 1rem;
+}
+
+.context {
+  max-width: 1440px;
+  padding: 1rem 1rem 0 1rem;
+  margin-inline: auto;
+}
+
+.context h3 {
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 920px) {
+  .context h3 {
+    text-align: center;
+  }
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 920px) {
+  .body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.body label {
+  color: gray;
+  font-weight: 500;
+}
+
+.body button {
+  align-self: flex-end;
+  width: 10%;
+  height: 100%;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3874dc;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+.body button:hover {
+  background-color: #3874dc;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 920px) {
+  .body button {
+    align-self: auto;
+    width: 50%;
+  }
+}
+
+.nameCol {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nameCol input {
+  padding: 0.5rem;
+  border: 0.5px solid black;
+}
+
+@media screen and (max-width: 920px) {
+  .nameCol {
+    width: 100%;
+  }
+}
+
+.priorityCol {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.priorityCol select {
+  height: 100%;
+  padding: 0.5rem;
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 920px) {
+  .priorityCol {
+    width: 100%;
+  }
+}
