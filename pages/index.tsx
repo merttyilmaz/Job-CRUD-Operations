@@ -5,7 +5,11 @@ import CreateJob from "../components/jobs/CreateJob";
 import JobList from "../components/jobs/JobList";
 
 const Home: NextPage = () => {
-  const priorityList: string[] = [];
+  let priorityList: string[] = [];
+
+  if (typeof window !== "undefined") {
+    priorityList = JSON.parse(localStorage.getItem("priorityList") || "[]");
+  }
 
   useEffect(() => {
     if (priorityList.length === 0) {
